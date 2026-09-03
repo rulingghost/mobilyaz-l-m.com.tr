@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="tr" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobil Yazılım | 10 Günde Anahtar Teslim Canlı Yayın ve Mobil Uygulama Çözümleri</title>
+    
+    <!-- SEO & Meta Tags -->
+    <meta name="description" content="10 günde anahtar teslim Canlı Yayın ve Sesli Sohbet platformu sahibi olun! iOS & Android canlı demoları hazır. Özel mobil uygulama geliştirme ve WhatsApp üzerinden anında fiyat teklifi.">
+    <meta name="keywords" content="mobil yazılım firması, canlı yayın uygulaması, sesli sohbet uygulaması, ios android canlı yayın, anahtar teslim canlı yayın platformu">
+    <meta name="author" content="Mobil Yazılım">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mobil Yazılım | 10 Günde Kendi Canlı Yayın Platformunuza Sahip Olun">
+    <meta property="og:description" content="Bigo Live & Clubhouse kalitesinde anahtar teslim canlı yayın ve ses platformları. iOS & Android demomuzu hemen test edin.">
+    <meta property="og:image" content="assets/images/app_showcase.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="header" id="main-header">
+        <div class="container nav-container">
+            <!-- Mobil Yazılım Özel Logo -->
+            <a href="#" class="logo" aria-label="Mobil Yazılım Anasayfa">
+                <div class="logo-badge">
+                    <svg viewBox="0 0 32 32" fill="none">
+                        <rect x="3" y="3" width="26" height="26" rx="7" fill="#0d111b" stroke="url(#logoG)" stroke-width="2"/>
+                        <path d="M12 11L22 16L12 21Z" fill="url(#logoG)"/>
+                        <path d="M9 13A6 6 0 0 0 9 19" stroke="#00dfd8" stroke-width="1.8" stroke-linecap="round"/>
+                        <path d="M23 13A6 6 0 0 1 23 19" stroke="#7928ca" stroke-width="1.8" stroke-linecap="round"/>
+                        <defs>
+                            <linearGradient id="logoG" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#00dfd8"/>
+                                <stop offset="0.5" stop-color="#0070f3"/>
+                                <stop offset="1" stop-color="#7928ca"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="logo-text-box">
+                    <span class="logo-main-text">Mobil <span class="gradient-text">Yazılım</span></span>
+                    <span class="logo-sub-text">Mobile &amp; Live Stream</span>
+                </div>
+            </a>
+
+            <!-- Düzenlenmiş Navigasyon Menüsü -->
+            <nav>
+                <ul class="nav-links" id="nav-menu">
+                    <li><a href="#solutions" class="nav-link" data-i18n="nav.solutions">Çözümlerimiz</a></li>
+                    <li><a href="#timeline" class="nav-link" data-i18n="nav.timeline">10 Günde Teslim</a></li>
+                    <li><a href="#demo-preview" class="nav-link" data-i18n="nav.demo">Canlı Demo</a></li>
+                    <li><a href="#calculator" class="nav-link" data-i18n="nav.calc">Fiyat Hesapla</a></li>
+                    <li><a href="#custom-projects" class="nav-link" data-i18n="nav.custom">Özel Yazılım</a></li>
+                    <li><a href="#faq" class="nav-link" data-i18n="nav.faq">S.S.S</a></li>
+                </ul>
+            </nav>
+
+            <!-- Sağ Butonlar & Çoklu Dil Seçici -->
+            <div class="nav-actions">
+                <!-- Dil Seçici (Türkçe, English, 中文, العربية) -->
+                <div class="lang-selector-wrap">
+                    <button class="lang-btn" id="lang-btn" aria-label="Dil Seçimi">
+                        <span id="lang-current-flag">🇹🇷</span>
+                        <span id="lang-current-name">TR</span>
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <ul class="lang-dropdown-menu" id="lang-dropdown-menu">
+                        <li class="lang-dropdown-item active" data-lang="tr"><span>🇹🇷</span> Türkçe</li>
+                        <li class="lang-dropdown-item" data-lang="en"><span>🇬🇧</span> English</li>
+                        <li class="lang-dropdown-item" data-lang="zh"><span>🇨🇳</span> 中文</li>
+                        <li class="lang-dropdown-item" data-lang="ar"><span>🇸🇦</span> العربية</li>
+                    </ul>
+                </div>
+
+                <a href="#calculator" class="btn btn-glass btn-sm" id="nav-demo-btn">
+                    <span data-i18n="nav.requestDemo">Demo Talep Et</span>
+                </a>
+
+                <a href="#" class="btn btn-whatsapp btn-sm" data-wa-type="general" id="nav-wa-btn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.97.53 1.776.814 2.796.815 3.184 0 5.77-2.586 5.77-5.766 0-3.181-2.586-5.768-5.77-5.768zm3.385 8.163c-.145.411-.744.757-1.026.804-.265.044-.61.066-1.745-.404-1.455-.602-2.39-2.072-2.463-2.169-.071-.097-.584-.778-.584-1.484 0-.706.368-1.053.499-1.198.131-.145.287-.182.383-.182.097 0 .193.001.277.006.088.004.206-.033.322.247.119.289.406 1.002.441 1.074.036.073.06.157.012.253-.048.096-.073.156-.145.241-.073.084-.153.188-.219.253-.073.072-.149.15-.064.296.085.145.378.623.81 1.009.557.498 1.026.652 1.171.724.146.072.23.061.316-.037.085-.097.363-.423.46-.568.096-.145.193-.121.326-.073.133.048.847.399.992.472.146.073.242.109.278.17.036.061.036.353-.109.764z"/>
+                    </svg>
+                    <span data-i18n="nav.quoteBtn">Fiyat Al</span>
+                </a>
+
+                <button class="hamburger" id="hamburger-btn" aria-label="Menüyü Aç/Kapat" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        <div class="nav-overlay" id="nav-overlay"></div>
+    </header>
+
+    <main>
+        <!-- Hero Section (Tamamen Satış & Kâr Odaklı) -->
+        <section class="hero-section" id="hero">
+            <div class="hero-glow-bg"></div>
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge-container">
+                        <div class="hero-badge highlight">
+                            <span class="live-pulse-dot"></span>
+                            <span data-i18n="hero.badge10Days">10 Günde Anahtar Teslim</span>
+                        </div>
+                        <div class="hero-badge">
+                            <span data-i18n="hero.badgeDemos">📱 iOS & Android Demoları Hazır</span>
+                        </div>
+                    </div>
+
+                    <h1 class="hero-title">
+                        <span data-i18n="hero.titlePart1">Kendi</span>
+                        <span class="gradient-text" data-i18n="hero.titleGradient1">Canlı Yayın</span>
+                        <span data-i18n="hero.titlePart2">ve</span>
+                        <span class="gradient-text-alt" data-i18n="hero.titleGradient2">Ses Platformunuza</span>
+                        <span data-i18n="hero.titlePart3">10 Günde Sahip Olun!</span>
+                    </h1>
+
+                    <p class="hero-description" data-i18n="hero.desc">
+                        Bigo Live, TikTok ve Clubhouse kalitesinde; yüksek kârlı sanal hediyeleşme sistemli, donmasız yayın kalitesine sahip ve kolay yönetim panelli <strong>anahtar teslim canlı yayın ve sesli sohbet uygulamaları</strong> kuruyoruz. İsteyen müşterilerimize özel fikirleri için sıfırdan mobil uygulama geliştiriyoruz.
+                    </p>
+
+                    <div class="hero-cta-group">
+                        <a href="#" class="btn btn-whatsapp" data-wa-type="liveStreamDemo" id="hero-wa-btn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.97.53 1.776.814 2.796.815 3.184 0 5.77-2.586 5.77-5.766 0-3.181-2.586-5.768-5.77-5.768zm3.385 8.163c-.145.411-.744.757-1.026.804-.265.044-.61.066-1.745-.404-1.455-.602-2.39-2.072-2.463-2.169-.071-.097-.584-.778-.584-1.484 0-.706.368-1.053.499-1.198.131-.145.287-.182.383-.182.097 0 .193.001.277.006.088.004.206-.033.322.247.119.289.406 1.002.441 1.074.036.073.06.157.012.253-.048.096-.073.156-.145.241-.073.084-.153.188-.219.253-.073.072-.149.15-.064.296.085.145.378.623.81 1.009.557.498 1.026.652 1.171.724.146.072.23.061.316-.037.085-.097.363-.423.46-.568.096-.145.193-.121.326-.073.133.048.847.399.992.472.146.073.242.109.278.17.036.061.036.353-.109.764z"/>
+                            </svg>
+                            <span data-i18n="hero.ctaWa">WhatsApp'tan Fiyat ve Detay Al</span>
+                        </a>
+
+                        <a href="#demo-preview" class="btn btn-glass" id="hero-demo-preview-btn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                            <span data-i18n="hero.ctaDemo">Canlı Demoyu İncele</span>
+                        </a>
+                    </div>
+
+                    <!-- Satış Odaklı Rakamlar (Teknik Jargon Yok) -->
+                    <div class="hero-stats-row">
+                        <div class="stat-item">
+                            <h4 data-i18n="hero.stat1Val">10 Gün</h4>
+                            <p data-i18n="hero.stat1Lbl">Anahtar Teslim Altyapı</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4 data-i18n="hero.stat2Val">HD+</h4>
+                            <p data-i18n="hero.stat2Lbl">Kesintisiz & Donmasız Yayın</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4 data-i18n="hero.stat3Val">100%</h4>
+                            <p data-i18n="hero.stat3Lbl">iOS & Android Uyumlu</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Visual Showcase -->
+                <div class="hero-visual">
+                    <div class="hero-image-wrapper">
+                        <img src="assets/images/app_showcase.jpg" alt="Mobil Yazılım Canlı Yayın ve Sesli Sohbet Platformu" width="800" height="450" loading="eager">
+                        <div class="floating-hearts-container"></div>
+                    </div>
+
+                    <div class="floating-pill-card">
+                        <div class="floating-pill-icon">
+                            <span>🎁</span>
+                        </div>
+                        <div class="floating-pill-text">
+                            <h5 data-i18n="hero.floatingCardTitle">Canlı Hediye & Cüzdan Sistemi</h5>
+                            <p data-i18n="hero.floatingCardSub">Bigo & TikTok uyumlu yüksek gelir modeli</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust / Quality Highlights Bar -->
+        <section class="trust-bar">
+            <div class="container trust-grid">
+                <div class="trust-item">
+                    <div class="trust-icon">⚡</div>
+                    <div class="trust-info">
+                        <h5 data-i18n="trust.item1Title">10 Günde Kurulum</h5>
+                        <p data-i18n="trust.item1Desc">Yönetim paneli ve çalışan sistem teslimi</p>
+                    </div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">📲</div>
+                    <div class="trust-info">
+                        <h5 data-i18n="trust.item2Title">Canlı Test Demoları</h5>
+                        <p data-i18n="trust.item2Desc">iOS TestFlight ve Android APK hemen hazır</p>
+                    </div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">🛡️</div>
+                    <div class="trust-info">
+                        <h5 data-i18n="trust.item3Title">Sınırsız Kullanıcı Kapasitesi</h5>
+                        <p data-i18n="trust.item3Desc">Milyonlarca izleyiciye hazır güçlü altyapı</p>
+                    </div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">💬</div>
+                    <div class="trust-info">
+                        <h5 data-i18n="trust.item4Title">Doğrudan WhatsApp İletişim</h5>
+                        <p data-i18n="trust.item4Desc">Tek tıkla anında fiyat ve ticari detay</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Turnkey Solutions Section -->
+        <section class="section" id="solutions">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-pill" data-i18n="solutions.pill">Ürünlerimiz & Çözümlerimiz</div>
+                    <h2 class="section-title">
+                        <span data-i18n="solutions.titlePart">Mobil Yayında İhtiyacınız Olan</span> 
+                        <span class="gradient-text" data-i18n="solutions.titleGrad">Tüm Çözümler</span>
+                    </h2>
+                    <p class="section-subtitle" data-i18n="solutions.subtitle">Ağırlıklı olarak yüksek kârlılığa sahip anahtar teslim canlı yayın ve ses platformları kuruyoruz; dileyen müşterilerimize özel mobil projeler üretiyoruz.</p>
+                </div>
+
+                <div class="solutions-grid">
+                    <!-- 1. Video Live Streaming -->
+                    <div class="solution-card featured" id="live-streaming">
+                        <div class="solution-badge" data-i18n="solutions.badgePopular">En Çok Tercih Edilen</div>
+                        <div class="solution-icon-wrap">📹</div>
+                        <h3 data-i18n="solutions.liveTitle">Canlı Video Yayın Platformu</h3>
+                        <p class="desc" data-i18n="solutions.liveDesc">Bigo Live ve TikTok kalitesinde, donmasız görüntü kalitesi ve yüksek etkileşimli gelir altyapısı.</p>
+                        
+                        <ul class="feature-list">
+                            <li><span class="check">✓</span> <span data-i18n="solutions.liveF1">Kesintisiz & Donmasız HD Yayın: Seyircileriniz yayınları anında izler, takılma veya donma yaşamaz.</span></li>
+                            <li><span class="check">✓</span> <span data-i18n="solutions.liveF2">Sanal Hediye & Elmas Cüzdanı: Kullanıcılar elmas satın alır, yayıncılara hediye atar ve kazanç üretir.</span></li>
+                            <li><span class="check">✓</span> <span data-i18n="solutions.liveF3">PK Canlı Savaşlar: İki yayıncının anlık hediye yarışı ile etkileşimi ve geliri katlayın.</span></li>
+                            <li><span class="check">✓</span> <span data-i18n="solutions.liveF4">VIP & Seviye Rozetleri: Giriş animasyonları, özel çerçeveler ve statü göstergeleri.</span></li>
+                            <li><span class="check">✓</span> <span data-i18n="solutions.liveF5">Yayıncı Ajans Sistemi: Ajans sahipleri için komisyon ve yayıncı yönetim ekranları.</span></li>
+                        </ul>
+
+                        <div class="solution-card-footer">
+                            <a href="#" class="btn btn-whatsapp" style="width: 100%;" data-wa-type="liveStreamDemo">
+                                <span data-i18n="solutions.liveBtn">Canlı Yayın Demosu & Fiyat Al</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- 2. Audio Rooms / Voice Streaming -->
+                    <div class="solution-card" id="audio-rooms">
+                        <div class="solution-icon-wrap">🎙️</div>
+                        <h3 data-i18n="solutions.audioTitle">Sesli Sohbet & Ses Odaları</h3>
+                        <p class="desc" data-i18n="solutions.audioDesc">Clubhouse ve Tango tarzı çoklu mikrofonda sesli sohbet, arkadaşlık ve topluluk platformu.</p>
+                        
+                        <ul class="feature-list">
+                            <li><span class="check">✓</span> <span data-i18n="solutions.audioF1">Çoklu Koltuk (Multi-Seat): 4, 8 veya 12 kişilik konuşmacı sahnesi.</span></li>
+                            <li><span class="check">✓</span> <span data-i18n="solutions.audioF2">Oda İçi Ses Efektleri: Alkış, arka plan müziği ve eğlenceli ses efektleri.</span></li>
+                            <li><span class="check">✓</span> <span data-i18n="solutions.audioF3">Oda Hediyeleşmesi: Konuşmacılara ve tüm odaya anında hediye fırlatma.</span></li>
+                            <li><span class="check">✓</span> <span data-i18n="solutions.audioF4">Mini Oyun Entegrasyonu: Çarkıfelek, zar ve kullanıcıyı ekranda tutan oyunlar.</span></li>
+                            <li><span class="check">✓</span> <span data-i18n="solutions.audioF5">Kolay Moderasyon: Tek tıkla susturma, odadan atma ve VIP özel odalar.</span></li>
+                        </ul>
+
+                        <div class="solution-card-footer">
+                            <a href="#" class="btn btn-glass" style="width: 100%;" data-wa-type="audioRoomDemo">
+                                <span data-i18n="solutions.audioBtn">Ses Odası Demosu & Fiyat Al</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- 3. Custom Mobile Apps -->
+                    <div class="solution-card" id="custom-apps">
+                        <div class="solution-icon-wrap">📱</div>
+                        <h3 data-i18n="solutions.customTitle">Özel Mobil Yazılım Geliştirme</h3>
+                        <p class="desc" data-i18n="solutions.customDesc">Aklınızdaki benzersiz iş fikirleri, start-up projeleri veya kurumsal mobil ihtiyaçlarınız için sıfırdan uygulama geliştiriyoruz.</p>
+                        
+                        <ul class="feature-list">
+                            <li><span class="check">✓</span> <span data-i18n="solutions.customF1">Çift Mağaza Gücü: Hem iPhone (Apple) hem de tüm Android telefonlarda kusursuz çalışır.</span></li>
+                            <li><span class="check">✓</span> <span data-i18n="solutions.customF2">Işık Hızında Akıcı Deneyim: Telefonu yormayan, şarjı tüketmeyen ve kullanıcıyı bağlayan modern tasarım.</span></li>
+                            <li><span class="check">✓</span> <span data-i18n="solutions.customF3">Fintech, Sosyal Ağ & Pazar Yeri: İhtiyacınıza ve iş modelinize göre özel arayüz tasarımı.</span></li>
+                            <li><span class="check">✓</span> <span data-i18n="solutions.customF4">Banka Seviyesinde Güvenlik: Kullanıcı ödemeleri ve kazançlar en üst düzey güvenlik ile korunur.</span></li>
+                            <li><span class="check">✓</span> <span data-i18n="solutions.customF5">Uçtan Uca Destek: Tasarımdan mağaza yüklemelerine ve satış sonrası desteğe kadar yanınızdayız.</span></li>
+                        </ul>
+
+                        <div class="solution-card-footer">
+                            <a href="#" class="btn btn-glass" style="width: 100%;" data-wa-type="customApp">
+                                <span data-i18n="solutions.customBtn">Özel Projeniz İçin Teklif Alın</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10 Days Turnkey Timeline Section -->
+        <section class="section" id="timeline" style="background: rgba(13, 17, 27, 0.5);">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-pill" data-i18n="timeline.pill">Süreç Çizelgesi</div>
+                    <h2 class="section-title">
+                        <span data-i18n="timeline.titlePart">10 Günde</span> 
+                        <span class="gradient-text" data-i18n="timeline.titleGrad">Nasıl Teslim Ediyoruz?</span>
+                    </h2>
+                    <p class="section-subtitle" data-i18n="timeline.subtitle">Yıllarca test edilmiş sağlam sistemimiz sayesinde sıfırdan canlı yayın platformunuzu 10 günde kullanıma hazır hale getiriyoruz.</p>
+                </div>
+
+                <div class="timeline-container">
+                    <!-- Important Store Disclaimer Note -->
+                    <div class="timeline-disclaimer">
+                        <div class="disclaimer-icon">⚠️</div>
+                        <div class="disclaimer-text">
+                            <h6 data-i18n="timeline.disclaimerTitle">Önemli Bilgilendirme: 10 Günde Anahtar Teslim Kapsamı</h6>
+                            <p data-i18n="timeline.disclaimerText">10 günlük teslimat süresi; uygulamanın adınıza markalanması, sunucu kurulumları, ödeme modülleri ve çalışır durumdaki yönetim paneli teslimatını kapsar. <strong>Apple App Store ve Google Play Store mağaza onay süreleri mağazaların kendi inceleme politikalarına tabi olup bu 10 günlük teknik sürenin dışındadır.</strong></p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-steps">
+                        <!-- Step 1 -->
+                        <div class="step-card">
+                            <div class="step-number-badge" data-i18n="timeline.step1Badge">ADIM 1</div>
+                            <div class="step-day" data-i18n="timeline.step1Day">Gün 1 - 2</div>
+                            <h4 data-i18n="timeline.step1Title">Markalama & Konsept</h4>
+                            <p data-i18n="timeline.step1Desc">Marka adınız, logonuz, kurumsal renk paletiniz ve alan adınız (domain) sisteme entegre edilir. Uygulama açılış ekranları ve ikonlar hazırlanır.</p>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="step-card">
+                            <div class="step-number-badge" data-i18n="timeline.step2Badge">ADIM 2</div>
+                            <div class="step-day" data-i18n="timeline.step2Day">Gün 3 - 5</div>
+                            <h4 data-i18n="timeline.step2Title">Yayın & Sunucu Altyapısı</h4>
+                            <p data-i18n="timeline.step2Desc">Kesintisiz ve yüksek hızlı yayın altyapısı, güvenli veri depolama ve binlerce anlık izleyiciyi kaldırabilen sunucu sistemi yayına hazır hale getirilir.</p>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="step-card">
+                            <div class="step-number-badge" data-i18n="timeline.step3Badge">ADIM 3</div>
+                            <div class="step-day" data-i18n="timeline.step3Day">Gün 6 - 8</div>
+                            <h4 data-i18n="timeline.step3Title">Ödeme & Yönetim Paneli</h4>
+                            <p data-i18n="timeline.step3Desc">Uygulama içi satın alma, kredi kartı tahsilatı, hediye cüzdanı, yayıncı komisyon oranları ve kolay yönetim paneli yapılandırılır.</p>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="step-card">
+                            <div class="step-number-badge" data-i18n="timeline.step4Badge">ADIM 4</div>
+                            <div class="step-day" data-i18n="timeline.step4Day">Gün 9 - 10</div>
+                            <h4 data-i18n="timeline.step4Title">Kullanıcı Testi & Anahtar Teslim</h4>
+                            <p data-i18n="timeline.step4Desc">Yoğun kullanıcı testleri yapılır, güvenlik kontrolleri tamamlanır. Yönetim paneli eğitimi verilerek sistem eksiksiz anahtar teslim edilir.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Live Demo Preview & Interactive Platform Showcase -->
+        <section class="section" id="demo-preview">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-pill" data-i18n="demo.pill">Canlı Test İmkânı</div>
+                    <h2 class="section-title">
+                        <span data-i18n="demo.titlePart">Satın Almadan Önce</span> 
+                        <span class="gradient-text" data-i18n="demo.titleGrad">Demomuzu Deneyin</span>
+                    </h2>
+                    <p class="section-subtitle" data-i18n="demo.subtitle">Sözde değil, gerçek! Hem iPhone (iOS TestFlight) hem de Android (APK) canlı demolarımızı telefonunuza kurup gerçek yayıncı deneyimini bizzat test edin.</p>
+                </div>
+
+                <div class="admin-showcase-box">
+                    <div class="admin-img-wrap">
+                        <img src="assets/images/admin_dashboard.jpg" alt="Canlı Yayın Admin ve Gelir Yönetim Paneli" width="900" height="506" loading="lazy">
+                    </div>
+                    <div class="admin-info-wrap">
+                        <div class="hero-badge highlight" style="display: inline-flex; margin-bottom: 15px;">
+                            <span data-i18n="demo.badgeAdmin">👑 Gelişmiş Web Yönetim Paneli Dahil</span>
+                        </div>
+                        <h3 data-i18n="demo.adminTitle">Platformunuzu Parmaklarınızın Ucundan Yönetin</h3>
+                        <p class="desc" data-i18n="demo.adminDesc">Sadece mobil uygulama değil; tüm yayıncıları, anlık kazançları, komisyonları ve kullanıcı hareketlerini tek ekrandan kolayca yönetebileceğiniz web kontrol paneli anahtar teslim olarak verilir.</p>
+
+                        <div class="admin-features-grid">
+                            <div class="af-item"><span class="af-icon">💎</span> <span data-i18n="demo.f1">Anlık Elmas & Hediye Takibi</span></div>
+                            <div class="af-item"><span class="af-icon">📊</span> <span data-i18n="demo.f2">Günlük / Aylık Finans Raporu</span></div>
+                            <div class="af-item"><span class="af-icon">🛑</span> <span data-i18n="demo.f3">Anında Yayıncı Ban / Susturma</span></div>
+                            <div class="af-item"><span class="af-icon">🏢</span> <span data-i18n="demo.f4">Ajans & Yayıncı Maaş Modülü</span></div>
+                        </div>
+
+                        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+                            <a href="#" class="btn btn-whatsapp" data-wa-type="liveStreamDemo">
+                                <span data-i18n="demo.btnIos">📱 iOS TestFlight Demosu İste</span>
+                            </a>
+                            <a href="#" class="btn btn-glass" data-wa-type="liveStreamDemo">
+                                <span data-i18n="demo.btnAndroid">🤖 Android APK Demosu İste</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Demo & Price Calculator Tool -->
+        <section class="section" id="calculator" style="background: rgba(7, 9, 14, 0.8);">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-pill" data-i18n="calc.pill">Tek Tıkla WhatsApp Teklifi</div>
+                    <h2 class="section-title">
+                        <span data-i18n="calc.titlePart">İhtiyacınızı Seçin,</span> 
+                        <span class="gradient-text" data-i18n="calc.titleGrad">Anında Fiyat Alın</span>
+                    </h2>
+                    <p class="section-subtitle" data-i18n="calc.subtitle">İlgilendiğiniz platform türünü ve ölçeğinizi belirleyin, tek tıkla doğrudan WhatsApp üzerinden net fiyat teklifi ve detaylı sunum dosyanızı alın.</p>
+                </div>
+
+                <div class="calculator-box">
+                    <!-- Step 1: Solution Type -->
+                    <div class="calc-step-group">
+                        <label class="calc-label" data-i18n="calc.step1Label">1. Hangi Platform Çözümüyle İlgileniyorsunuz?</label>
+                        <div class="calc-radio-group">
+                            <div class="calc-radio-card">
+                                <input type="radio" id="sol-live" name="calc-solution" value="Canlı Video Yayın Platformu (Bigo/TikTok Tarzı)" checked>
+                                <label for="sol-live">
+                                    <span class="title" data-i18n="calc.solLiveTitle">📹 Canlı Video Yayın</span>
+                                    <span class="sub" data-i18n="calc.solLiveSub">Hediyeleşme, PK & Video Stream</span>
+                                </label>
+                            </div>
+                            <div class="calc-radio-card">
+                                <input type="radio" id="sol-audio" name="calc-solution" value="Sesli Sohbet / Ses Odaları Platformu (Clubhouse Tarzı)">
+                                <label for="sol-audio">
+                                    <span class="title" data-i18n="calc.solAudioTitle">🎙️ Sesli Sohbet Odaları</span>
+                                    <span class="sub" data-i18n="calc.solAudioSub">Multi-seat ses, podcast & sohbet</span>
+                                </label>
+                            </div>
+                            <div class="calc-radio-card">
+                                <input type="radio" id="sol-custom" name="calc-solution" value="Özel Mobil Uygulama Projesi">
+                                <label for="sol-custom">
+                                    <span class="title" data-i18n="calc.solCustomTitle">✨ Özel Mobil Proje</span>
+                                    <span class="sub" data-i18n="calc.solCustomSub">Fikrinize özel sıfırdan geliştirme</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Target Audience & Scale -->
+                    <div class="calc-step-group">
+                        <label class="calc-label" for="calc-audience" data-i18n="calc.step2Label">2. Başlangıç İçin Hedeflediğiniz Anlık Kullanıcı Kapasitesi:</label>
+                        <select id="calc-audience" class="calc-select-control">
+                            <option value="Başlangıç Ölçeği (500 - 2.000 Anlık Kullanıcı)" data-i18n="calc.opt1">Başlangıç Paketi (500 - 2.000 Anlık Kullanıcı)</option>
+                            <option value="Büyüme Ölçeği (2.000 - 15.000 Anlık Kullanıcı)" data-i18n="calc.opt2" selected>Büyüme Paketi (2.000 - 15.000 Anlık Kullanıcı)</option>
+                            <option value="Büyük Ölçek (15.000+ Sınırsız Kapasite)" data-i18n="calc.opt3">Büyük Ölçek (15.000+ Sınırsız Kapasite)</option>
+                        </select>
+                    </div>
+
+                    <!-- Step 3: Demo Request Platform -->
+                    <div class="calc-step-group">
+                        <label class="calc-label" data-i18n="calc.step3Label">3. İncelemek İstediğiniz Canlı Demo Türü:</label>
+                        <div class="calc-radio-group">
+                            <div class="calc-radio-card">
+                                <input type="radio" id="demo-both" name="calc-demo-type" value="iOS & Android (Her İkisi)" checked>
+                                <label for="demo-both">
+                                    <span class="title" data-i18n="calc.demoBothTitle">🍏 + 🤖 Her İkisi</span>
+                                    <span class="sub" data-i18n="calc.demoBothSub">Hem iOS hem Android demo</span>
+                                </label>
+                            </div>
+                            <div class="calc-radio-card">
+                                <input type="radio" id="demo-ios" name="calc-demo-type" value="Yalnızca iOS (TestFlight)">
+                                <label for="demo-ios">
+                                    <span class="title" data-i18n="calc.demoIosTitle">🍏 Apple iOS</span>
+                                    <span class="sub" data-i18n="calc.demoIosSub">TestFlight davetiyesi</span>
+                                </label>
+                            </div>
+                            <div class="calc-radio-card">
+                                <input type="radio" id="demo-android" name="calc-demo-type" value="Yalnızca Android (APK)">
+                                <label for="demo-android">
+                                    <span class="title" data-i18n="calc.demoAndroidTitle">🤖 Google Android</span>
+                                    <span class="sub" data-i18n="calc.demoAndroidSub">Direkt kurulabilir APK</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Submit WhatsApp CTA -->
+                    <div class="calc-submit-box">
+                        <button class="btn btn-whatsapp" id="calc-whatsapp-btn" style="font-size: 1.1rem; padding: 15px 34px;">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.97.53 1.776.814 2.796.815 3.184 0 5.77-2.586 5.77-5.766 0-3.181-2.586-5.768-5.77-5.768zm3.385 8.163c-.145.411-.744.757-1.026.804-.265.044-.61.066-1.745-.404-1.455-.602-2.39-2.072-2.463-2.169-.071-.097-.584-.778-.584-1.484 0-.706.368-1.053.499-1.198.131-.145.287-.182.383-.182.097 0 .193.001.277.006.088.004.206-.033.322.247.119.289.406 1.002.441 1.074.036.073.06.157.012.253-.048.096-.073.156-.145.241-.073.084-.153.188-.219.253-.073.072-.149.15-.064.296.085.145.378.623.81 1.009.557.498 1.026.652 1.171.724.146.072.23.061.316-.037.085-.097.363-.423.46-.568.096-.145.193-.121.326-.073.133.048.847.399.992.472.146.073.242.109.278.17.036.061.036.353-.109.764z"/>
+                            </svg>
+                            <span data-i18n="calc.submitBtn">WhatsApp'tan Fiyat ve Demoyu Gönder</span>
+                        </button>
+                        <p class="calc-note" data-i18n="calc.note">🔒 Butona tıkladığınızda seçimlerinize özel WhatsApp mesajı hazır olarak açılır. Teknik detayları da temsilcimizden öğrenebilirsiniz.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Custom Mobile Apps Showcase (Satış & Kâr Rozetleri) -->
+        <section class="section" id="custom-projects">
+            <div class="container custom-apps-row">
+                <div class="custom-apps-text">
+                    <div class="section-pill" data-i18n="customSec.pill">Farklı Fikirleriniz İçin</div>
+                    <h3>
+                        <span data-i18n="customSec.titlePart">Özel Mobil Uygulama</span> 
+                        <span class="gradient-text" data-i18n="customSec.titleGrad">Geliştirme</span>
+                    </h3>
+                    <p data-i18n="customSec.desc">Sadece canlı yayınla sınırlı değiliz. E-ticaretten sosyal ağlara, teslimat uygulamalarından özel girişimlerinize kadar tüm projelerinizi yüksek kârlı bir mobil uygulamaya dönüştürüyoruz.</p>
+
+                    <!-- Yazılımsal Jargon Yerine Satış & Avantaj Rozetleri -->
+                    <div class="tech-badges-wrap">
+                        <span class="tech-badge" data-i18n="customSec.badge1">💎 Yüksek Gelirli İş Modeli</span>
+                        <span class="tech-badge" data-i18n="customSec.badge2">⚡ Donmasız HD Yayın Kalitesi</span>
+                        <span class="tech-badge" data-i18n="customSec.badge3">📱 Hem iPhone Hem Android Uyumlu</span>
+                        <span class="tech-badge" data-i18n="customSec.badge4">💳 Güvenli Ödeme & Cüzdan Sistemi</span>
+                        <span class="tech-badge" data-i18n="customSec.badge5">👑 Sıfır Kod Bilgisiyle Kolay Yönetim</span>
+                        <span class="tech-badge" data-i18n="customSec.badge6">🛡️ 7/24 Teknik Destek & Bakım</span>
+                    </div>
+
+                    <div style="margin: 18px 0 24px; padding: 12px 18px; background: rgba(0, 223, 216, 0.08); border: 1px dashed rgba(0, 223, 216, 0.35); border-radius: 12px; font-size: 0.88rem; color: #cbd5e1;">
+                        <span data-i18n="customSec.techNote">ℹ️ Sunucu özellikleri ve tüm teknik mimari detayları için WhatsApp üzerinden uzman ekibimizle anında görüşebilirsiniz.</span>
+                    </div>
+
+                    <a href="#" class="btn btn-glass" data-wa-type="customApp">
+                        <span data-i18n="customSec.ctaBtn">Projenizi Bize Anlatın (WhatsApp)</span>
+                    </a>
+                </div>
+
+                <div class="custom-apps-img">
+                    <img src="assets/images/custom_apps.jpg" alt="Özel Mobil Yazılım Geliştirme Örnekleri" width="800" height="450" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Frequently Asked Questions (Accordion - Tamamen Satış Dili) -->
+        <section class="section" id="faq">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-pill" data-i18n="faq.pill">Merak Edilenler</div>
+                    <h2 class="section-title">
+                        <span data-i18n="faq.titlePart">Sıkça Sorulan</span> 
+                        <span class="gradient-text" data-i18n="faq.titleGrad">Sorular</span>
+                    </h2>
+                    <p class="section-subtitle" data-i18n="faq.subtitle">Canlı yayın platformu kurulumu, demolar ve teslimat süreci hakkında en çok sorulan soruların yanıtları.</p>
+                </div>
+
+                <div class="faq-grid">
+                    <!-- FAQ 1 -->
+                    <div class="faq-card active">
+                        <div class="faq-question">
+                            <span data-i18n="faq.q1">10 günde nasıl anahtar teslim platform teslim edebiliyorsunuz?</span>
+                            <span class="faq-toggle-icon">▼</span>
+                        </div>
+                        <div class="faq-answer" style="max-height: 220px;">
+                            <p data-i18n="faq.a1">Yayıncılık platformlarımızın tüm canlı yayın, hediyeleşme, yarışma ve yönetim mekanizmaları ekibimiz tarafından önceden mükemmelleştirilmiştir. Sıfırdan aylarca beklemek yerine, hazır ve kusursuz çalışan bu sistemi sizin marka adınız, logonuz ve kurumsal renklerinizle sadece 10 günde anahtar teslim olarak kullanımınıza sunuyoruz.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div class="faq-card">
+                        <div class="faq-question">
+                            <span data-i18n="faq.q2">Google Play ve App Store yükleme süresi neden 10 güne dahil değil?</span>
+                            <span class="faq-toggle-icon">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="faq.a2">Teknik kurulum ve testlerimiz 10 günde tamamlanmaktadır. Ancak Apple (App Store) ve Google (Google Play) mağaza inceleme süreçleri tamamen ilgili şirketlerin bağımsız denetçilerine aittir. İnceleme süreleri 2 gün ile 2 hafta arasında değişebildiği için, şeffaflık ilkemiz gereği mağaza onay sürelerini 10 günlük teknik teslimat süresine dahil etmiyoruz. Uygulamalarınızın mağaza politikalarına uyumlu yüklenmesinde tüm desteği sağlıyoruz.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="faq-card">
+                        <div class="faq-question">
+                            <span data-i18n="faq.q3">Canlı Demoyu telefonumda nasıl test edebilirim?</span>
+                            <span class="faq-toggle-icon">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="faq.a3">WhatsApp hattımızdan bize ulaştığınızda müşteri temsilcimiz iPhone kullanıcıları için Apple TestFlight davet bağlantısını, Android kullanıcıları için ise direkt kurulabilir demo APK dosyasını ve test giriş bilgilerini iletmektedir. Kendi telefonunuzda gerçek canlı yayın açabilir, hediye atabilir ve ses odalarını deneyimleyebilirsiniz.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 4 -->
+                    <div class="faq-card">
+                        <div class="faq-question">
+                            <span data-i18n="faq.q4">Fiyatlandırma nasıl belirleniyor?</span>
+                            <span class="faq-toggle-icon">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="faq.a4">Fiyatlandırma; seçeceğiniz platform türüne (Sadece Canlı Yayın, Sadece Ses Odası veya Hibrit), hedeflediğiniz anlık kullanıcı kapasitesine ve talep ettiğiniz özel ek fonksiyonlara göre şekillenmektedir. Bütçenize ve iş modelinize en uygun paket teklifini WhatsApp üzerinden dakikalar içinde iletiyoruz.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 5 -->
+                    <div class="faq-card">
+                        <div class="faq-question">
+                            <span data-i18n="faq.q5">Canlı yayın dışında farklı bir mobil uygulama projem var, yapabilir misiniz?</span>
+                            <span class="faq-toggle-icon">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="faq.a5">Kesinlikle evet. Ekibimiz hem iPhone hem Android için her türlü mobil uygulamayı geliştirebilecek üst düzey tecrübeye sahiptir. E-ticaret, sosyal ağ, randevu sistemleri veya fintech gibi yenilikçi iş fikirlerinizi sıfırdan hayata geçiriyoruz. Teknik detaylar ve fiyat teklifi için WhatsApp'tan bize yazabilirsiniz.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 6 -->
+                    <div class="faq-card">
+                        <div class="faq-question">
+                            <span data-i18n="faq.q6">Satış sonrasında teknik destek ve bakım sağlıyor musunuz?</span>
+                            <span class="faq-toggle-icon">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="faq.a6">Evet, teslimat sonrasında yalnız kalmazsınız. Sistemin kesintisiz çalışması, sunucu bakımları ve düzenli güncellemeler için teknik destek paketlerimizle işinizi 7/24 güvence altına alıyoruz.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Banner -->
+        <section class="section" style="padding-top: 20px;">
+            <div class="container">
+                <div class="cta-banner">
+                    <h2>
+                        <span data-i18n="banner.titlePart">Kendi Canlı Yayın İmparatorluğunuzu</span> 
+                        <span class="gradient-text" data-i18n="banner.titleGrad">Bugün Başlatın</span>
+                    </h2>
+                    <p data-i18n="banner.desc">10 gün sonra kendi markanızla çalışan yüksek kârlı bir canlı yayın veya sesli sohbet platformuna sahip olun. WhatsApp üzerinden demomuzu inceleyin ve teklifinizi alın.</p>
+
+                    <div style="display: flex; justify-content: center; gap: 14px; flex-wrap: wrap;">
+                        <a href="#" class="btn btn-whatsapp" data-wa-type="general">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.97.53 1.776.814 2.796.815 3.184 0 5.77-2.586 5.77-5.766 0-3.181-2.586-5.768-5.77-5.768zm3.385 8.163c-.145.411-.744.757-1.026.804-.265.044-.61.066-1.745-.404-1.455-.602-2.39-2.072-2.463-2.169-.071-.097-.584-.778-.584-1.484 0-.706.368-1.053.499-1.198.131-.145.287-.182.383-.182.097 0 .193.001.277.006.088.004.206-.033.322.247.119.289.406 1.002.441 1.074.036.073.06.157.012.253-.048.096-.073.156-.145.241-.073.084-.153.188-.219.253-.073.072-.149.15-.064.296.085.145.378.623.81 1.009.557.498 1.026.652 1.171.724.146.072.23.061.316-.037.085-.097.363-.423.46-.568.096-.145.193-.121.326-.073.133.048.847.399.992.472.146.073.242.109.278.17.036.061.036.353-.109.764z"/>
+                            </svg>
+                            <span data-i18n="banner.btnWa">WhatsApp İle Hemen Fiyat Alın</span>
+                        </a>
+                        <a href="#calculator" class="btn btn-glass">
+                            <span data-i18n="banner.btnDemo">Demo Seçeneklerini Gör</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo" style="margin-bottom: 16px;">
+                        <div class="logo-badge">
+                            <svg viewBox="0 0 32 32" fill="none">
+                                <rect x="3" y="3" width="26" height="26" rx="7" fill="#0d111b" stroke="url(#logoG2)" stroke-width="2"/>
+                                <path d="M12 11L22 16L12 21Z" fill="url(#logoG2)"/>
+                                <defs>
+                                    <linearGradient id="logoG2" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#00dfd8"/>
+                                        <stop offset="1" stop-color="#7928ca"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="logo-text-box">
+                            <span class="logo-main-text">Mobil <span class="gradient-text">Yazılım</span></span>
+                            <span class="logo-sub-text">Mobile &amp; Live Stream</span>
+                        </div>
+                    </div>
+                    <p data-i18n="footer.desc">Yüksek performanslı anahtar teslim Canlı Yayın ve Sesli Sohbet platformları üreten öncü mobil yazılım firması. 10 günde hazır altyapı, sınırsız kazanç potansiyeli.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h5 data-i18n="footer.col1Title">Çözümlerimiz</h5>
+                    <ul class="footer-links">
+                        <li><a href="#live-streaming" data-i18n="solutions.liveTitle">Canlı Video Yayını</a></li>
+                        <li><a href="#audio-rooms" data-i18n="solutions.audioTitle">Sesli Sohbet Odaları</a></li>
+                        <li><a href="#custom-projects" data-i18n="solutions.customTitle">Özel Mobil Yazılım</a></li>
+                        <li><a href="#timeline" data-i18n="nav.timeline">10 Günde Kurulum</a></li>
+                        <li><a href="#demo-preview" data-i18n="nav.demo">Web Admin Paneli</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h5 data-i18n="footer.col2Title">Hızlı Menü</h5>
+                    <ul class="footer-links">
+                        <li><a href="#demo-preview" data-i18n="nav.demo">Canlı Demolar (iOS/Android)</a></li>
+                        <li><a href="#calculator" data-i18n="nav.calc">Fiyat & Demo Simülatörü</a></li>
+                        <li><a href="#faq" data-i18n="nav.faq">Sıkça Sorulan Sorular</a></li>
+                        <li><a href="#" data-wa-type="general">WhatsApp Destek Hattı</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h5 data-i18n="footer.col3Title">Hemen Ulaşın</h5>
+                    <p>Telefon / WhatsApp:<br><strong>+90 533 782 96 34</strong></p>
+                    <p>E-Posta:<br><span data-config="email">info@mobilyazilim.com</span></p>
+                    <a href="#" class="btn btn-whatsapp btn-sm" data-wa-type="general" style="margin-top: 10px;">
+                        <span data-i18n="footer.waHelp">WhatsApp'tan Yazın</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p data-i18n="footer.copyRight">© 2026 Mobil Yazılım. Tüm hakları saklıdır.</p>
+                <p data-i18n="footer.disclaimer">Google Play ve Apple App Store ticari markaları ilgili şirketlerin mülkiyetindedir.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Persistent Floating WhatsApp Button (+905337829634) -->
+    <a href="#" class="floating-wa-btn" data-wa-type="general" id="floating-whatsapp" aria-label="WhatsApp İletişim">
+        <div class="floating-wa-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.699c.97.53 1.776.814 2.796.815 3.184 0 5.77-2.586 5.77-5.766 0-3.181-2.586-5.768-5.77-5.768zm3.385 8.163c-.145.411-.744.757-1.026.804-.265.044-.61.066-1.745-.404-1.455-.602-2.39-2.072-2.463-2.169-.071-.097-.584-.778-.584-1.484 0-.706.368-1.053.499-1.198.131-.145.287-.182.383-.182.097 0 .193.001.277.006.088.004.206-.033.322.247.119.289.406 1.002.441 1.074.036.073.06.157.012.253-.048.096-.073.156-.145.241-.073.084-.153.188-.219.253-.073.072-.149.15-.064.296.085.145.378.623.81 1.009.557.498 1.026.652 1.171.724.146.072.23.061.316-.037.085-.097.363-.423.46-.568.096-.145.193-.121.326-.073.133.048.847.399.992.472.146.073.242.109.278.17.036.061.036.353-.109.764z"/>
+            </svg>
+        </div>
+        <div class="floating-wa-text">
+            <span class="top" data-i18n="footer.waHelp">WhatsApp Canlı Destek</span>
+            <span class="bot">+90 533 782 96 34</span>
+        </div>
+    </a>
+
+    <!-- Scripts -->
+    <script src="js/config.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/whatsapp.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
