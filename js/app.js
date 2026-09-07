@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 1. Çoklu Dil Sistemini Başlat (Varsayılan: tr veya kaydedilmiş dil)
     initI18n();
 
-    // 2. WhatsApp Yöneticisini Başlat (+905337829634)
+    // 2. WhatsApp Yöneticisini Başlat (+908503050529)
     if (window.WhatsAppManager) {
         window.WhatsAppManager.initTriggers();
     }

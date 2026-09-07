@@ -815,7 +815,7 @@ html[dir="rtl"] .solution-badge {
 }
 
 /* ==========================================================================
-   10 Days Turnkey Timeline Section
+   20 Days Turnkey Timeline Section
    ========================================================================== */
 .timeline-container {
     position: relative;
@@ -1280,6 +1280,14 @@ html[dir="rtl"] .admin-img-wrap {
     border-top: 1px solid var(--border-color);
     font-size: 0.82rem;
     color: var(--text-dim);
+}
+
+.footer-affiliation {
+    margin-top: 16px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    letter-spacing: 0.01em;
 }
 
 /* ==========================================================================

@@ -8,8 +8,8 @@ Bu proje; anahtar teslim **Canlı Yayın (Video Streaming)** ve **Ses Yayın (Au
 
 1. **Ağırlıklı Canlı Yayın & Ses Yayını Çözümleri:**
    - Bigo Live, TikTok ve Clubhouse kalitesinde özellikler: Ultra düşük gecikme (<500ms WebRTC/RTMP), sanal hediyeleşme, elmas cüzdanı, PK canlı savaşlar, çoklu koltuklu ses odaları ve gelişmiş SaaS web admin yönetim paneli.
-2. **10 Günde Anahtar Teslim Süreç Çizelgesi:**
-   - Markalama, sunucu altyapısı, ödeme entegrasyonu ve stres testlerinin 10 günde tamamlanışını gösteren 4 adımlı zaman çizelgesi.
+2. **20 Günde Anahtar Teslim Süreç Çizelgesi:**
+   - Markalama, sunucu altyapısı, ödeme entegrasyonu ve stres testlerinin 20 günde tamamlanışını gösteren 4 adımlı zaman çizelgesi.
    - Google Play ve Apple App Store mağaza onay süreçlerine ilişkin şeffaf bilgilendirme kutusu.
 3. **iOS & Android Canlı Demo Talebi:**
    - iPhone kullanıcıları için Apple TestFlight, Android kullanıcıları için doğrudan kurulabilir APK demo test akışı.

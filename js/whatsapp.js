@@ -8,10 +8,10 @@ const WhatsAppManager = {
      * @returns {string} WhatsApp web/app linki
      */
     createLink: function(text) {
-        // Kullanıcının belirttiği resmi numara: 905337829634
+        // Kullanıcının belirttiği resmi numara: 908503050529
         const number = (window.SITE_CONFIG && window.SITE_CONFIG.whatsappNumber) 
             ? window.SITE_CONFIG.whatsappNumber 
-            : "905337829634";
+            : "908503050529";
         const encoded = encodeURIComponent(text.trim());
         return `https://wa.me/${number}?text=${encoded}`;
     },
